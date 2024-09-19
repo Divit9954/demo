@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    <main>
+        <section id="location-input" class="card">
+            <h2>Add Location</h2>
+            <form id="add-location-form">
+                <input type="text" id="location-name" placeholder="Location Name" required>
+                <button type="submit">Add Location</button>
+            </form>
+        </section>
+        <section id="path-input" class="card">
+            <h2>Add Path</h2>
+            <form id="add-path-form">
+                <input type="text" id="path-from" placeholder="From Location" required>
+                <input type="text" id="path-to" placeholder="To Location" required>
+                <input type="number" id="path-distance" placeholder="Distance" required>
+                <button type="submit">Add Path</button>
+            </form>
+        </section>
+        <section id="route-finder" class="card">
+            <h2>Find Route</h2>
+            <form id="find-route-form">
+                <input type="text" id="start-location" placeholder="Start Location" required>
+                <input type="text" id="end-location" placeholder="End Location" required>
+                <button type="submit">Find Route</button>
+            </form>
+            <div id="route-result"></div>
+        </section>
+        <section id="itinerary-planner" class="card">
+            <h2>Plan Itinerary</h2>
+            <form id="plan-itinerary-form">
+                <input type="text" id="itinerary-locations" placeholder="Enter locations separated by commas" required>
+                <button type="submit">Plan Itinerary</button>
+            </form>
+            <div id="itinerary-result"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
